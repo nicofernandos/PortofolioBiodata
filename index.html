@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Nico Fernando Simanjuntak</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"> Nico Fernando </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#biodata">Biodata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Pengalaman</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>
+          Halo, Saya
+          <span
+            style="
+              background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+            >Nico Fernando</span
+          >
+        </h1>
+        <p>Information System Graduate & Web Developer</p>
+        <button
+          class="btn btn-primary"
+          onclick="document.getElementById('biodata').scrollIntoView({behavior: 'smooth'})"
+        >
+          <i class="fas fa-arrow-down"></i> Pelajari Lebih Lanjut
+        </button>
+      </div>
+    </section>
+
+    <!-- Biodata Section -->
+    <section id="biodata" class="biodata">
+      <div class="container">
+        <h2 class="section-title">Biodata</h2>
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="profile-wrapper">
+              <img
+                src="https://via.placeholder.com/250?text=Nico+Fernando"
+                alt="Foto Profil"
+                class="profile-img"
+              />
+              <div class="profile-badge">Developer</div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="biodata-content">
+              <h3 class="biodata-name">Nico Fernando Sampe Tua Simanjuntak</h3>
+              <p class="biodata-title">
+                Web Developer & Information System Specialist
+              </p>
+
+              <div class="biodata-grid">
+                <div class="biodata-item">
+                  <i class="fas fa-calendar-alt"></i>
+                  <div>
+                    <label>Tempat Lahir</label>
+                    <span>Palembang, Indonesia</span>
+                  </div>
+                </div>
+                <div class="biodata-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <label>Nomor Telepon</label>
+                    <span>+62 814-3804-9332</span>
+                  </div>
+                </div>
+                <div class="biodata-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <label>Email</label>
+                    <span>nico.fernando@example.com</span>
+                  </div>
+                </div>
+                <div class="biodata-item">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div>
+                    <label>Pendidikan</label>
+                    <span>S1 Information System - Bina Darma</span>
+                  </div>
+                </div>
+                <div class="biodata-item">
+                  <i class="fas fa-star"></i>
+                  <div>
+                    <label>GPA Score</label>
+                    <span>3.74 / 4.00</span>
+                  </div>
+                </div>
+                <div class="biodata-item">
+                  <i class="fas fa-briefcase"></i>
+                  <div>
+                    <label>Pengalaman</label>
+                    <span>1+ Tahun Web Development</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="biodata-description mt-4">
+                <p>
+                  Saya adalah seorang Information System graduate yang
+                  passionate dalam menciptakan solusi web yang inovatif dan
+                  user-friendly. Dengan pengalaman dalam pengembangan aplikasi
+                  web menggunakan teknologi modern seperti HTML5, CSS3,
+                  JavaScript, PHP CodeIgniter, dan Laravel, saya siap membawa
+                  ide Anda menjadi kenyataan.
+                </p>
+                <p>
+                  Saya memiliki keahlian dalam system analysis & design, UI/UX
+                  design dengan Figma, dan full-stack web development. Selalu
+                  komitmen untuk memberikan solusi terbaik yang sesuai dengan
+                  kebutuhan klien dan mengikuti perkembangan teknologi terkini.
+                </p>
+              </div>
+
+              <div class="biodata-buttons mt-4">
+                <button
+                  class="btn-download"
+                  onclick="alert('Fitur Download CV akan segera tersedia')"
+                >
+                  <i class="fas fa-download"></i> Download CV
+                </button>
+                <button
+                  class="btn-connect"
+                  onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                >
+                  <i class="fas fa-handshake"></i> Hubungi Saya
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Pengalaman Kerja</h2>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="exp-card">
+              <div class="exp-period">
+                <i class="fas fa-calendar"></i> Mar 2025 - Jul 2025
+              </div>
+              <div class="exp-position">Programmer Jr</div>
+              <div class="exp-company">PT Perintis Kode Global</div>
+              <ul class="exp-description">
+                <li>
+                  Performed comprehensive maintenance and feature enhancements
+                  untuk web-based applications
+                </li>
+                <li>
+                  Conducted system analysis, designed databases, dan developed
+                  process flow diagrams
+                </li>
+                <li>
+                  Transformed UI/UX designs dari Figma menjadi fully functional,
+                  production-ready web applications
+                </li>
+                <li>
+                  Executed deployment dan hosting processes dengan seamless
+                  migration ke production
+                </li>
+                <li>
+                  Collaborated dengan development team menggunakan GitHub untuk
+                  version control
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-period">
+                <i class="fas fa-calendar"></i> Sep 2023 - Jan 2024
+              </div>
+              <div class="exp-position">Information System - Internship</div>
+              <div class="exp-company">MBKM UMKM LLDIKTI Wilayah 2</div>
+              <ul class="exp-description">
+                <li>
+                  PIC dalam team untuk Development dan Digitalization UMKM
+                </li>
+                <li>Create business governance dan content planning</li>
+                <li>Development website company profile UMKM</li>
+                <li>Resolving dan finding ways to solve problem dalam UMKM</li>
+              </ul>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-period">
+                <i class="fas fa-calendar"></i> Mar 2023 - Jun 2023
+              </div>
+              <div class="exp-position">
+                Information Communication Technology - Internship
+              </div>
+              <div class="exp-company">PT Pertamina Hulu Rokan Zona</div>
+              <ul class="exp-description">
+                <li>
+                  Cooperation dengan user dan employee dalam solving problems
+                </li>
+                <li>Installing network cable dari server ke client</li>
+                <li>Terminate cable ke new wall plate</li>
+                <li>
+                  Created Helpdesk Ticketing System menggunakan Codeigniter,
+                  PHP, CSS, Bootstrap
+                </li>
+                <li>Hardware dan Software debugging troubleshooting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title">Portofolio Proyek</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="portfolio-content">
+                <h5>E-Commerce</h5>
+                <p>
+                  Platform e-commerce yang responsif dengan fitur keranjang
+                  belanja dan sistem pembayaran terintegrasi.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <i class="fas fa-map-location-dot"></i>
+              </div>
+              <div class="portfolio-content">
+                <h5>Destination Web</h5>
+                <p>
+                  Website destinasi wisata dengan fitur pencarian lokasi,
+                  gallery, dan booking sistem.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <i class="fas fa-boxes"></i>
+              </div>
+              <div class="portfolio-content">
+                <h5>Sistem Inventori</h5>
+                <p>
+                  Aplikasi manajemen inventori dengan laporan real-time dan
+                  notifikasi stok.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">CodeIgniter</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <i class="fas fa-id-card"></i>
+              </div>
+              <div class="portfolio-content">
+                <h5>Attendance Portal</h5>
+                <p>
+                  Sistem presensi online dengan fitur laporan dan integrasi
+                  database.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <i class="fas fa-ticket"></i>
+              </div>
+              <div class="portfolio-content">
+                <h5>Helpdesk Ticketing</h5>
+                <p>
+                  Sistem tiket helpdesk dengan tracking status dan management
+                  dashboard.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">CodeIgniter</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="portfolio-content">
+                <h5>Personal Portofolio</h5>
+                <p>
+                  Website portofolio personal dengan design responsif dan
+                  dynamic content.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nama Anda"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email Anda"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Subjek"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="5"
+              placeholder="Pesan Anda"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <h4>Ikuti Saya</h4>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" title="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p>
+          &copy; 2025 Nico Fernando Simanjuntak. Dibuat dengan
+          <i class="fas fa-heart" style="color: #e74c3c"></i> menggunakan HTML,
+          CSS & JavaScript
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="java.js"></script>
+  </body>
+</html>
