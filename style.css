@@ -613,6 +613,118 @@ footer {
   transform: translateY(-5px) rotate(10deg);
 }
 
+/* Portofolio UI UX */
+.portofoliouiux {
+  padding: 60px 20px;
+}
+
+.portofoliouiux-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portofoliouiux-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.portofoliouiux-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.portofoliouiux-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portofoliouiux-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.portofoliouiux-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: #f0f0f0;
+  height: 250px;
+}
+
+.portofoliouiux-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.portofoliouiux-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.portofoliouiux-card:hover .portofoliouiux-image {
+  transform: scale(1.1);
+}
+
+.portofoliouiux-content {
+  padding: 25px;
+}
+
+.portofoliouiux-content h5 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.portofoliouiux-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.portofoliouiux-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portofoliouiux-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .portofoliouiux-title {
+    font-size: 2rem;
+  }
+
+  .portofoliouiux-images {
+    height: 200px;
+  }
+
+  .portofoliouiux-content {
+    padding: 20px;
+  }
+
+  .portofoliouiux-content h5 {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
