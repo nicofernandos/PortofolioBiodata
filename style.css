@@ -467,7 +467,6 @@ section {
 }
 
 /* Portfolio Section */
-/* Portfolio Image Styling */
 .portfolio-img {
   height: 250px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -492,7 +491,6 @@ section {
   transform: scale(1.1);
 }
 
-/* Jika gambar tidak ada, tampilkan background gradient */
 .portfolio-img:has(img[src=""]),
 .portfolio-img:has(img[alt*="?"]) {
   display: flex;
@@ -707,9 +705,239 @@ footer {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+/* ============================================
+   RESPONSIVE MEDIA QUERIES
+   ============================================ */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .biodata-name {
+    font-size: 2.2rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .biodata-name {
+    font-size: 2rem;
+  }
+
+  .biodata-title {
+    font-size: 1.2rem;
+  }
+
+  .about-content {
+    font-size: 1rem;
+  }
+
+  .exp-card {
+    padding: 20px;
+  }
+
+  .exp-position {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-content {
+    padding: 20px;
+  }
+
+  .portofoliouiux-row {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Navbar adjustments */
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: 90vh;
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .hero::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero::after {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-waves {
+    height: 100px;
+  }
+
+  .btn-primary {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 50px 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+
+  .section-title::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  /* Biodata */
+  .profile-wrapper {
+    max-width: 200px;
+  }
+
+  .profile-badge {
+    bottom: 5px;
+    right: 50px;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+
+  .biodata-name {
+    font-size: 1.8rem;
+  }
+
+  .biodata-title {
+    font-size: 1.1rem;
+  }
+
+  .biodata-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .biodata-item {
+    padding: 12px;
+  }
+
+  .biodata-item:hover {
+    transform: translateX(5px);
+  }
+
+  .biodata-description {
+    font-size: 1rem;
+  }
+
+  .biodata-description p {
+    text-align: left;
+  }
+
+  .biodata-buttons {
+    flex-direction: column;
+  }
+
+  .btn-download,
+  .btn-connect {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About */
+  .about-content {
+    font-size: 0.95rem;
+  }
+
+  .skills {
+    margin-top: 30px;
+  }
+
+  .skill-item {
+    margin-bottom: 20px;
+  }
+
+  /* Experience */
+  .exp-card {
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+
+  .exp-position {
+    font-size: 1.1rem;
+  }
+
+  .exp-description {
+    font-size: 0.9rem;
+  }
+
+  /* Portfolio */
+  .portfolio-img {
+    height: 200px;
+    font-size: 2rem;
+  }
+
+  .portfolio-content {
+    padding: 18px;
+  }
+
+  .portfolio-content h5 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-content p {
+    font-size: 0.9rem;
+  }
+
+  /* Portfolio UI/UX */
+  .portofoliouiux {
+    padding: 50px 15px;
+  }
+
   .portofoliouiux-title {
     font-size: 2rem;
+    margin-bottom: 35px;
+  }
+
+  .portofoliouiux-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .portofoliouiux-images {
@@ -723,25 +951,181 @@ footer {
   .portofoliouiux-content h5 {
     font-size: 1.3rem;
   }
+
+  .portofoliouiux-content p {
+    font-size: 0.9rem;
+  }
+
+  /* Contact */
+  .contact-form {
+    padding: 0 10px;
+  }
+
+  .form-control {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .btn-submit {
+    padding: 12px 30px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 25px 15px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 8px;
+  }
 }
 
-@media (max-width: 768px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
   .hero h1 {
-    font-size: 2.5rem;
-  }
-  .hero p {
-    font-size: 1.1rem;
-  }
-  .hero-waves {
-    height: 100px;
-  }
-  .section-title {
     font-size: 2rem;
   }
-  section {
-    padding: 50px 15px;
+
+  .hero p {
+    font-size: 1rem;
   }
-  .biodata-grid {
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .biodata-name {
+    font-size: 1.6rem;
+  }
+
+  .biodata-title {
+    font-size: 1rem;
+  }
+
+  .profile-wrapper {
+    max-width: 180px;
+  }
+
+  .profile-badge {
+    right: 30px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+
+  .biodata-item i {
+    font-size: 1.3rem;
+  }
+
+  .exp-card {
+    padding: 15px;
+  }
+
+  .exp-position {
+    font-size: 1rem;
+  }
+
+  .portfolio-img {
+    height: 180px;
+  }
+
+  .portofoliouiux-title {
+    font-size: 1.7rem;
+  }
+
+  .portofoliouiux-images {
+    height: 180px;
+  }
+
+  .portofoliouiux-content h5 {
+    font-size: 1.2rem;
+  }
+
+  .social-links a {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 6px;
+  }
+}
+
+/* Very small devices (less than 400px) */
+@media (max-width: 399.98px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .biodata-name {
+    font-size: 1.4rem;
+  }
+
+  .profile-wrapper {
+    max-width: 160px;
+  }
+
+  .profile-badge {
+    right: 20px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .portofoliouiux-row {
     grid-template-columns: 1fr;
+  }
+
+  .portofoliouiux-images {
+    grid-template-columns: 1fr;
+    height: 160px;
+  }
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .nav-link:hover {
+    transform: none;
+  }
+
+  .btn-primary:hover,
+  .btn-download:hover,
+  .btn-connect:hover,
+  .btn-submit:hover {
+    transform: none;
+  }
+
+  .profile-img:hover {
+    transform: none;
+  }
+
+  .biodata-item:hover {
+    transform: none;
+  }
+
+  .portfolio-card:hover,
+  .exp-card:hover {
+    transform: none;
+  }
+
+  .portfolio-card:hover .portfolio-image,
+  .portofoliouiux-card:hover .portofoliouiux-image {
+    transform: none;
+  }
+
+  .social-links a:hover {
+    transform: none;
   }
 }
