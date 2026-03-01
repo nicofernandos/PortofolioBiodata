@@ -640,7 +640,9 @@ footer {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .portofoliouiux-card:hover {
@@ -1128,4 +1130,59 @@ footer {
   .social-links a:hover {
     transform: none;
   }
+}
+
+[data-theme="dark"] body {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(30, 30, 30, 0.95) !important;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #ddd !important;
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .biodata-name,
+[data-theme="dark"] .exp-position,
+[data-theme="dark"] .portfolio-content h5,
+[data-theme="dark"] .portofoliouiux-content h5 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .biodata,
+[data-theme="dark"] .contact,
+[data-theme="dark"] .portfolio-card,
+[data-theme="dark"] .exp-card,
+[data-theme="dark"] .portofoliouiux-card {
+  background: #1e1e1e;
+}
+
+[data-theme="dark"] .biodata-item {
+  background: #2d2d2d;
+}
+
+[data-theme="dark"] .biodata-item span,
+[data-theme="dark"] .biodata-description,
+[data-theme="dark"] .exp-description,
+[data-theme="dark"] .portfolio-content p,
+[data-theme="dark"] .portofoliouiux-content p {
+  color: #cccccc;
+}
+
+[data-theme="dark"] .experience {
+  background: #151515;
+}
+
+[data-theme="dark"] .form-control {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #fff;
+}
+
+[data-theme="dark"] .tag {
+  background: #333;
 }

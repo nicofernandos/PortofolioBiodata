@@ -35,3 +35,23 @@ document.querySelectorAll(".portfolio-card").forEach((card) => {
 document.querySelectorAll(".exp-card").forEach((card) => {
   observer.observe(card);
 });
+
+const toggleBtn = document.getElementById("darkModeToggle");
+const icon = toggleBtn.querySelector("i");
+
+if (localStorage.getItem("theme") === "dark") {
+  document.documentElement.setAttribute("data-theme", "dark");
+  icon.classList.replace("fa-moon", "fa-sun");
+}
+
+toggleBtn.addEventListener("click", () => {
+  if (document.documentElement.getAttribute("data-theme") === "dark") {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+    icon.classList.replace("fa-sun", "fa-moon");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+    icon.classList.replace("fa-moon", "fa-sun");
+  }
+});
