@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -44,6 +44,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Kontak</a>
             </li>
+            <li class="nav-item d-flex align-items-center ms-lg-3">
+              <button
+                id="darkModeToggle"
+                class="btn btn-sm btn-outline-secondary"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -66,7 +74,11 @@
         <p>Information System Graduate & Web Developer</p>
         <button
           class="btn btn-primary"
-          onclick="document.getElementById('biodata').scrollIntoView({behavior: 'smooth'})"
+          onclick="
+            document
+              .getElementById('biodata')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
         >
           <i class="fas fa-arrow-down"></i> Pelajari Lebih Lanjut
         </button>
@@ -205,7 +217,11 @@
                 </button>
                 <button
                   class="btn-connect"
-                  onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                  onclick="
+                    document
+                      .getElementById('contact')
+                      .scrollIntoView({ behavior: 'smooth' })
+                  "
                 >
                   <i class="fas fa-handshake"></i> Hubungi Saya
                 </button>
@@ -222,6 +238,55 @@
         <h2 class="section-title">Pengalaman Kerja</h2>
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
+            <div class="exp-card">
+              <div class="exp-period">
+                <i class="fas fa-calendar"></i> Nov 2025 - Present
+              </div>
+              <div class="exp-position">
+                IT Technical Support And Data Engineer
+              </div>
+              <div class="exp-company">
+                PT Bukit Asam Tbk
+                <span style="font-weight: 400"
+                  >(Employed by PT Cybertrend Intrabuana - Contract)</span
+                >
+              </div>
+              <ul class="exp-description">
+                <li>
+                  Working as a IT Technical Support and Data Engginer assigned
+                  to PT Bukit Asam Tbk under PT Cybertrend Intrabuana (vendor
+                  company).
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-period">
+                <i class="fas fa-calendar"></i> Agust 2025 - Okt 2025
+              </div>
+              <div class="exp-position">Trainee Support & Programmer</div>
+              <div class="exp-company">CV Vittindo Digital Teknologi</div>
+              <ul class="exp-description">
+                <li>
+                  Served as a Trainee Support and Programmer, responsible for
+                  managing IT infrastructure and developing web-based
+                  applications to support company operations. Performed CCTV
+                  installation and configuration, internal server setup and
+                  maintenance including file sharing services, computer and
+                  network troubleshooting, and provided technical support to end
+                  users. On the development side, built a Car Wash management
+                  application integrated with a thermal printer for receipt
+                  generation, developed a Point of Sale (POS) system for
+                  transaction recording and sales reporting, and created a
+                  School Information System with role-based access for teachers,
+                  students, and parents. Additionally, participated in legacy
+                  system migration to a new platform and developed reporting
+                  recap systems to support monitoring and management
+                  decision-making.
+                </li>
+              </ul>
+            </div>
+
             <div class="exp-card">
               <div class="exp-period">
                 <i class="fas fa-calendar"></i> Mar 2025 - Jul 2025
